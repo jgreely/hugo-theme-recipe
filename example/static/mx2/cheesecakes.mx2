@@ -1,0 +1,111 @@
+<?xml version="1.0" standalone="yes" encoding="ISO-8859-1"?>
+<!DOCTYPE mx2 SYSTEM "mx2.dtd">
+<mx2 source="mx2cat" date="">
+<Summ>
+<Nam>
+Amaretto Peach Cheesecake
+</Nam>
+<Nam>
+Bailey&apos;s Irish Cream Cheesecake
+</Nam>
+<Nam>
+Festive Irish Cream Cheesecake
+</Nam>
+</Summ>
+<RcpE name="Amaretto Peach Cheesecake" author="">
+<Serv qty="10"/>
+<PrpT elapsed="0:00"/>
+<CatS>
+<CatT>
+New Import
+</CatT>
+</CatS>
+<IngR name="margarine" unit="tablespoons" qty="3"></IngR>
+<IngR name="sugar" unit="cup" qty="1/3"></IngR>
+<IngR name="egg" unit="large" qty="1"></IngR>
+<IngR name="unbleached all-purpose flour" unit="cup" qty="3/4"></IngR>
+<IngR name="cream cheese, softened" unit="ounces" qty="24"></IngR>
+<IngR name="sugar" unit="cup" qty="3/4"></IngR>
+<IngR name="unbleached all-purpose flour" unit="tablespoons" qty="3"></IngR>
+<IngR name="eggs" unit="large" qty="3"></IngR>
+<IngR name="canned peach halves *" unit="ounces" qty="16"></IngR>
+<IngR name="almond flavored liqueur" unit="cup" qty="1/4"></IngR>
+<DirS>
+<DirT>
+*   Peach halves should be drained, and then pureed.
+</DirT>
+<DirT>
+Combine margarine and sugar until light and fluffy.  Blend in egg.   Add flour; mix well.  Spread dough onto bottom of 9-inch springform pan. Bake at 450 degrees F., 10 minutes. Combine cream cheese, sugar and flour; mixing at medium speed on electric mixer until well blended.  Add eggs, one at a time, mixing well after each addition.  Add peaches and liqueur; mix well.  Pour over crust.  Bake at 450 degrees F., 10 minutes.  Reduce oven temperature to 250 degrees F.; continue baking 65 minutes.  Loosen cake from rim of pan; cool before removing rim of pan.  Chill.  Garnish with additional peach slices and sliced almonds, if desired.
+</DirT>
+</DirS>
+</RcpE>
+<RcpE name="Bailey&apos;s Irish Cream Cheesecake" author="">
+<Serv qty="12"/>
+<PrpT elapsed="0:00"/>
+<CatS>
+<CatT>
+New Import
+</CatT>
+</CatS>
+<IngR name="vcdt13a"></IngR>
+<IngR name="--crust--" code="S"></IngR>
+<IngR name="graham crackers" unit="package" qty="1 1/2">
+<IPrp>
+crushed
+</IPrp>
+</IngR>
+<IngR name="butter" qty="6">
+<IPrp>
+melted
+</IPrp>
+</IngR>
+<IngR name="sugar" unit="cup" qty="1/3"></IngR>
+<IngR name="mix and pat into bottom and"></IngR>
+<IngR name="springform pan"></IngR>
+<IngR name="bake at 350 for 10 mins"></IngR>
+<IngR name="filling"></IngR>
+<IngR name="cream cheese" unit="ounce" qty="24">
+<IPrp>
+unwrapped
+</IPrp>
+</IngR>
+<IngR name="and softened in a microwave"></IngR>
+<IngR name="on high"></IngR>
+<IngR name="jumbo eggs separated" qty="5"></IngR>
+<IngR name="sugar" unit="cup" qty="1 1/2"></IngR>
+<IngR name="knox gelatin" unit="envelopes" qty="2"></IngR>
+<IngR name="cocoa" qty="3"></IngR>
+<IngR name="bailey&apos;s irish cream" unit="cup" qty="1/2"></IngR>
+<IngR name="whipping cream" unit="pint" qty="1"></IngR>
+<DirS>
+<DirT>
+Soften gelatin in small saucepan with 3/4 cup water. Stir egg yolks into 1 cup sugar. Add to gelatin mixture and cook over med. heat. stirring constantly until mixture thickens and bubbles. Cool. Beat cheese in large bowl until light and fluffy. Add cocoa and beat again. Add Bailey&apos;s and beat some more. Slowly add gelatin mixture an blend well. Beat egg whites until soft peaks form. Add remaining 1/2 cup sugar and continue beating until stiff peaks form. Fold into cheese mixture. Whip cream and fold into cheese mixture. Pour into crust and refrigerated several hours or overnight.
+</DirT>
+</DirS>
+</RcpE>
+<RcpE name="Festive Irish Cream Cheesecake" author="">
+<Serv qty="10"/>
+<PrpT elapsed="0:00"/>
+<CatS>
+<CatT>
+New Import
+</CatT>
+</CatS>
+<IngR name="graham cracker crumbs" unit="cup" qty="1"></IngR>
+<IngR name="sugar" unit="cup" qty="1/4"></IngR>
+<IngR name="margarine, melted" unit="cup" qty="1/4"></IngR>
+<IngR name="unflavored gelatin" unit="envelope" qty="1"></IngR>
+<IngR name="cold water" unit="cup" qty="1/2"></IngR>
+<IngR name="sugar" unit="cup" qty="1"></IngR>
+<IngR name="eggs, separated" unit="large" qty="3"></IngR>
+<IngR name="cream cheese, softened" unit="ounces" qty="16"></IngR>
+<IngR name="cocoa" unit="tablespoons" qty="2"></IngR>
+<IngR name="bourbon" unit="tablespoons" qty="2"></IngR>
+<IngR name="whipping cream, whipped" unit="cup" qty="1"></IngR>
+<DirS>
+<DirT>
+Combine graham cracker crumbs, sugar, and margarine; press onto bottom of 9-inch springform pan. Soften gelatin in water, stir over low heat until dissolved.  Blend in 3/4 cup sugar and beaten egg yolks; cook stirring constantly, over low heat, 3 minutes.  Combine cream cheese and cocoa, mixing at medium speed on electric mixer until well blended.  Gradually add gelatin mixture and bourbon, mixing until well blended.  Chill until thickened, but not set. Beat egg whites until foamy; gradually adding the remaining sugar, beating until stiff peaks form.  Fold egg whites and whipped cream into cheese mixture and pour over crust.  Chill until firm.  Garnish with chocolate curls and small silver candy balls, if desired. VARIATION: Substitute 2 T cold coffee for bourbon.
+</DirT>
+</DirS>
+</RcpE>
+</mx2>

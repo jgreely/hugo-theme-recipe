@@ -1,0 +1,21 @@
+{{ define "title" }}
+{{ .Title }}
+{{ end }}
+{{ define "main" }}
+  <h1>{{ .Title | safeHTML | markdownify }}</h1>
+  {{ .Content }}
+  <hr>
+  {{ if .Sections }}
+    {{ range .Sections.ByTitle }}
+      <h3><a href="{{ .RelPermalink }}">{{ .Title | safeHTML | markdownify }}</a></h3>
+    {{ end }}
+  {{ else }}
+    {{ $paginator := .Paginate .Data.Pages }}
+    {{ $.Scratch.Set "paginator" $paginator }}
+     {{ partialCached "initials.html" . .Dir }}
+    {{ range $paginator.Pages.ByTitle }}
+      <h3><a href="{{ .RelPermalink }}">{{ .Title | safeHTML | markdownify }}</a></h3>
+    {{ end }}
+    <div class="hidden-print" style="margin-top:-18px">{{ partial "pagination-ellipsed.html" . }}</div>
+  {{ end }}
+{{ end }}

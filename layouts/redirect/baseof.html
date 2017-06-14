@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<title>{{ block "title" . }}REDIRECT{{ end }}</title>
+</head><body>
+<!--
+ this needs to be done outside of the script tag, or
+ else it outputs ten zillion double quotes before the
+ valid JSON array.
+-->
+{{- range $.Site.RegularPages -}}
+  {{ $.Scratch.Add "tmp" (slice .RelPermalink) }}
+{{- end -}}
+{{ $.Scratch.Get "tmp" | jsonify | $.Scratch.Set "tmp" }}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	var recipe = {{ $.Scratch.Get "tmp" | safeJS }} ;
+	var index = Math.floor(Math.random() * recipe.length);
+	$(location).attr('href', recipe[index]);
+});
+</script>
+</body></html>

@@ -1,0 +1,15 @@
+{{ $paginator := $.Scratch.Get "paginator" }}
+{{ if gt $paginator.TotalPages 5 }}
+  {{ range sort $.Paginator.Pagers "PageNumber" "desc" }}
+    {{ $current := . }}
+    {{ range .Pages }}
+      {{ $i := (substr .Title 0 1 | lower | replaceRE "[^a-z]" "#") }}
+      {{ $.Scratch.SetInMap "initial" $i $current }}
+    {{ end }}
+  {{ end }}
+  <div class="panel panel-default hidden-print"><ul class="list-inline" style="padding-left:0.75em;padding-top:0.75em">
+  {{ range $k,$v := $.Scratch.Get "initial" }}
+    <li><a href="{{ $v.URL }}">{{ $k | upper }}</a></li>
+  {{ end }}
+  </ul></div>
+{{ end }}

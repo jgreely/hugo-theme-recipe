@@ -1,0 +1,26 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+  <hr>
+  {{ $page := . }}
+  <table class="count">
+  {{ range .Sections.ByTitle }}
+        <h3><a href="{{ .RelPermalink }}">{{.Title | safeHTML | markdownify }}</a></h3>
+      <ul class="list-unstyled">
+      {{ range .Sections }}
+        <li class="h4" style="padding-left:4rem"><a href="{{ .RelPermalink }}">{{.Title | safeHTML | markdownify }}</a></li>
+      {{ end }}
+      </ul>
+  {{ end }}
+  </table>
+{{ end }}
+{{ define "sidebar" }}
+  {{ with (where $.Site.RegularPages "Params.featured" true)}}
+    <div class="list-group">
+    <h3 class="list-group-item disabled">Featured Recipes</h3>
+    {{ range first 10 . }}
+      <a href="{{ .RelPermalink }}" class="list-group-item">{{ .Title }}</a>
+    {{ end }}
+    </div>
+  {{ end }}
+{{ end }}

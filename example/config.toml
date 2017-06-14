@@ -1,0 +1,25 @@
+baseURL = "//recipes.dotclue.org"
+languageCode = "en-us"
+title = "Recipe Archive"
+theme = "recipe"
+disableKinds = [ "sitemap" ]
+pluralizeListTitles=false
+paginate = 20
+SectionPagesMenu = "main"
+
+[outputs]
+home = ["HTML"]
+page = ["HTML"]
+
+[params]
+paginateWindow = 3
+
+[taxonomies]
+category = "categories"
+
+[blackfriday]
+fractions = false
+smartypants = false
+extensions = [
+    "Autolink",
+]

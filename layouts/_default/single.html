@@ -1,0 +1,23 @@
+{{ define "title" }}
+{{ .Title | plainify }}
+{{ end }}
+{{ define "main" }}
+<h1>{{ .Title | safeHTML | markdownify }}</h1>
+{{.Content}}
+{{ end }}
+{{define "sidebar" }}
+  {{ if .Params.categories }}
+    <h3>Categories</h3>
+    <ul>
+      {{ range $c := .Params.categories }}
+        <li><a href="/categories/{{ $c | urlize}}">{{ $c }}</a></li>
+      {{ end }}
+    </ul>
+  {{ end }}
+  {{ range (split "author,source,altsource,yield,servings,preptime,alttime,totaltime,nationality,wine,copyright" ",") }}
+    {{ if $.Param . }}
+      <h3>{{ . | humanize }}</h3>
+      {{ $.Param . }}
+    {{ end }}
+  {{ end }}
+{{ end }}

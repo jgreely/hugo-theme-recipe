@@ -1,0 +1,37 @@
+name = "Recipe"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE.md"
+description = "Simple, clean, scalable layout for a recipe site"
+homepage = "http://recipes.dotclue.org/"
+tags = [
+    "bootstrap",
+    "clean",
+    "cookbook",
+    "pagination",
+    "responsive",
+    "scalable",
+]
+features = [
+    "alphabetical pager links",
+        # must use partialCached for efficiency!
+    "baseof",
+	"breadcrumbs",
+    "bootstrap theme",
+    "embedded recipes",
+        # MasterCook 'code="R"' autolinks
+    "featured articles",
+        # featured=true in front matter
+    "google fonts",
+    "nested sections",
+    "print-only embedded recipes",
+    "random article link",
+        # /random/ redirects to any regular content page
+    "robots.txt",
+        # disallows all; personally, I don't want the search traffic
+    "section menu",
+]
+min_version = "0.22"
+
+[author]
+name = "J Greely"
+homepage = "https://dotclue.org/"

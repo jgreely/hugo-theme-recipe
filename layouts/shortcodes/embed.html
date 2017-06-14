@@ -1,0 +1,7 @@
+<div class="visible-print-block">
+<hr>
+{{ with $.Site.GetPage "page" (.Get 0) }}
+<h1>{{ .Title | safeHTML | markdownify }}</h1>
+{{.RawContent | markdownify}}
+{{ end }}
+</div>
