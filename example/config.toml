@@ -13,6 +13,7 @@ page = ["HTML"]
 
 [params]
 paginateWindow = 3
+featuredCount = 20
 
 [taxonomies]
 category = "categories"

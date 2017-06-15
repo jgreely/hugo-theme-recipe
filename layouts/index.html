@@ -18,7 +18,7 @@
   {{ with (where $.Site.RegularPages "Params.featured" true)}}
     <div class="list-group">
     <h3 class="list-group-item disabled">Featured Recipes</h3>
-    {{ range first 10 . }}
+    {{ range first ($.Site.Params.featuredCount | default 10) . }}
       <a href="{{ .RelPermalink }}" class="list-group-item">{{ .Title }}</a>
     {{ end }}
     </div>
