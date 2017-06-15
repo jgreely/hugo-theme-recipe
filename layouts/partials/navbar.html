@@ -17,11 +17,11 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Collections <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            {{ $currentPage := . }}
-            {{ range .Site.Home.Sections }}
-              <li {{if eq $currentPage.Section .Section }} class="active"{{end}}><a class="sidebar-nav-item" href="{{.RelPermalink}}">{{ .Title }}</a></li>
+            {{ $currentDir := .Dir }}
+            {{ range .Site.Home.Sections.ByTitle }}
+              <li {{if eq $currentDir .Dir }} class="active"{{end}}><a class="sidebar-nav-item" href="{{.RelPermalink}}">{{ .Title }}</a></li>
               {{ range .Sections }}
-                <li><a class="sidebar-nav-item" href="{{.RelPermalink}}">&nbsp;&nbsp;{{ .Title }}</a></li>
+                <li {{if eq $currentDir .Dir }} class="active"{{end}}><a class="sidebar-nav-item" href="{{.RelPermalink}}">&nbsp;&nbsp;{{ .Title }}</a></li>
               {{ end }}
             {{ end }}
           </ul>
