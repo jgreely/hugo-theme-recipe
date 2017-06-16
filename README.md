@@ -22,6 +22,10 @@ sections and `$.Site.GetPage "page"` support.
    shortcode (see example in `content/mcarchive/cheesecakes`), and
    name the file `static/mx2/sectionname.mx2`.
 
+5. (optional) To add emoji-based star ratings, add lines to `data/stars.toml`
+   of the form `"/rel/perma/link/" = N`. The default is 0, and there's
+   no maximum. A negative rating prints a single red "X".
+
 ## Notes
 
 * The `xml2md` script isn't in the repo yet; still cleaning up the

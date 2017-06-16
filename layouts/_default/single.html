@@ -6,6 +6,7 @@
 {{.Content}}
 {{ end }}
 {{define "sidebar" }}
+  <h3>{{ partial "stars" . }}</h3>
   {{ if .Params.categories }}
     <h3>Categories</h3>
     <ul>

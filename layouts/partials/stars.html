@@ -1,0 +1,10 @@
+{{- if $.Site.Data.stars -}}
+  {{ $stars := index $.Site.Data.stars .RelPermalink | default 0 }}
+  {{- if gt $stars 0 -}}
+    {{- range seq 1 $stars -}}
+      {{ printf ":star:" | emojify }}
+    {{- end -}}
+  {{- else if lt $stars 0 -}}
+    {{ printf ":x:" | emojify }}
+  {{- end -}}
+{{- end -}}
