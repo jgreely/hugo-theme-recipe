@@ -22,9 +22,13 @@ sections and `$.Site.GetPage "page"` support.
    shortcode (see example in `content/mcarchive/cheesecakes`), and
    name the file `static/mx2/sectionname.mx2`.
 
-5. (optional) To add emoji-based star ratings, add lines to `data/stars.toml`
-   of the form `"/rel/perma/link/" = N`. The default is 0, and there's
+5. (optional) To add emoji-based star ratings, add lines to the
+   `[stars]` section of `data/meta.toml`, in the form 
+   `"/rel/perma/link/" = N`. The default is 0, and there's
    no maximum. A negative rating prints a single red "X".
+
+6. (optional) To add featured recipes on the home page, add lines
+   to the `featured` array in `data/meta.toml`.
 
 ## Notes
 

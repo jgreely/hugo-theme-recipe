@@ -1,5 +1,5 @@
-{{- if $.Site.Data.stars -}}
-  {{ $stars := index $.Site.Data.stars .RelPermalink | default 0 }}
+{{- if $.Site.Data.meta.stars -}}
+  {{ $stars := index $.Site.Data.meta.stars .RelPermalink | default 0 }}
   {{- if gt $stars 0 -}}
     {{- range seq 1 $stars -}}
       {{ printf ":star:" | emojify }}

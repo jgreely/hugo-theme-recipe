@@ -15,7 +15,7 @@
   </table>
 {{ end }}
 {{ define "sidebar" }}
-  {{ with (where $.Site.RegularPages "Params.featured" true)}}
+  {{ with (where $.Site.RegularPages "RelPermalink" "in" $.Site.Data.meta.featured )}}
     <div class="list-group">
     <h3 class="list-group-item disabled">Featured Recipes</h3>
     {{ range first ($.Site.Params.featuredCount | default 10) . }}

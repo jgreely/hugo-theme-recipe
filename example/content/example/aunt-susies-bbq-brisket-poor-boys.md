@@ -1,5 +1,4 @@
 +++
-featured=true
 title = "Aunt Susie's BBQ Brisket Poor Boys"
 servings = "6"
 +++
