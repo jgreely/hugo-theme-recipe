@@ -12,7 +12,11 @@
   {{ else }}
     {{ $paginator := .Paginate .Data.Pages }}
     {{ $.Scratch.Set "paginator" $paginator }}
-     {{ partialCached "initials.html" . .Dir }}
+    {{ if eq .Kind "taxonomy" }}
+      {{ partialCached "initials.html" . .RelPermalink }}
+    {{ else }}
+      {{ partialCached "initials.html" . .Dir }}
+    {{ end }}
     {{ range $paginator.Pages.ByTitle }}
       <h3><a href="{{ .RelPermalink }}">{{ .Title | safeHTML | markdownify }}</a> {{ partial "stars" . }}</h3>
     {{ end }}
