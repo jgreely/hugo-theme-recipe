@@ -30,6 +30,9 @@ sections and `$.Site.GetPage "page"` support.
 6. (optional) To add featured recipes on the home page, add lines
    to the `featured` array in `data/meta.toml`.
 
+7. (optional) To add a navbar link for whatever search engine you
+   use, uncomment the `search=` line in `data/meta.toml`.
+
 ## Notes
 
 * The `xml2md` script isn't in the repo yet; still cleaning up the
