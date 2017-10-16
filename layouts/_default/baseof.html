@@ -44,7 +44,7 @@ td.count {vertical-align:top;padding-right: 2rem; text-align:right; font-weight:
 }
 </style>
 </head><body>
-<div class="hidden-print">{{ partial "navbar.html" . }}</div>
+<div class="hidden-print">{{ partialCached "navbar.html" . .Dir }}</div>
 <div class="container"><div class="row"><div class="col-sm-8">
 {{ block "main" . }}<h1>MISSING CONTENT</h1>{{ end }}
 </div>
