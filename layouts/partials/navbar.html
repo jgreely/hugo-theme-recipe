@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/">Home</a>
+      <a class="navbar-brand" href="{{ "" | absURL }}">Home</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -26,7 +26,7 @@
             {{ end }}
           </ul>
         </li>
-        <li><a href="/random/">Random</a></li>
+        <li><a href="{{ "random" | absURL }}">Random</a></li>
         {{ with $.Site.Data.meta.search }}
           <li><a href="{{ . }}">Search</a></li>
         {{ end }}
